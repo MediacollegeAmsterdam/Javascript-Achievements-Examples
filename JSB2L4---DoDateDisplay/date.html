@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum voorbeelden</title>
+    <script>
+        function voorbeeld() {
+            let vandaag = new Date();
+            let jaarDiv = document.getElementById("jaar");
+            jaarDiv.innerHTML = "Het huidig jaar is " + vandaag.getFullYear();
+
+            // Een exacte datum opgeven: 7 januari 2002
+            let geboortedatum = new Date('2002-01-07')
+            let geboorteDiv = document.getElementById("geboren");
+            geboorteDiv.innerHTML = "Geboren in " + geboortedatum.getFullYear();
+        }
+
+        document.addEventListener("DOMContentLoaded", voorbeeld)
+    </script>
+</head>
+
+<body>
+    <div id="jaar"></div>
+    <div id="geboren"></div>
+</body>
+
+</html>
