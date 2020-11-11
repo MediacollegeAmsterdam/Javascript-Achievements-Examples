@@ -2,4 +2,4 @@ function toonDatum(){
     // Schrijf hier jou code    
 }
 
-window.addEventListener('load', toonDatum);
+window.addEventListener('DOMContentLoaded', toonDatum);
