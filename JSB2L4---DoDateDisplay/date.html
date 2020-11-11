@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datum voorbeelden</title>
     <script>
-        function voorbeeld() {
-            let vandaag = new Date();
-            let jaarDiv = document.getElementById("jaar");
-            jaarDiv.innerHTML = "Het huidig jaar is " + vandaag.getFullYear();
-
+        function toonDatum() {
             // Een exacte datum opgeven: 7 januari 2002
-            let geboortedatum = new Date('2002-01-07')
-            let geboorteDiv = document.getElementById("geboren");
-            geboorteDiv.innerHTML = "Geboren in " + geboortedatum.getFullYear();
+            let geboortedatum = new Date('1975-04-22')
+            let dagDiv = document.getElementById("dag");
+            let maandDiv = document.getElementById("maand");
+            let jaarDiv = document.getElementById("jaar");
+
+            dagDiv.innerHTML = geboortedatum.getDate();
+            maandDiv.innerHTML = geboortedatum.getMonth() + 1;
+            jaarDiv.innerHTML = geboortedatum.getFullYear();
+
         }
 
-        document.addEventListener("DOMContentLoaded", voorbeeld)
+        document.addEventListener("DOMContentLoaded", toonDatum)
     </script>
+    <style type="text/css">
+        body {
+            font-size: 28px;
+        }
+        
+        div {
+            display: inline;
+        }
+    </style>
 </head>
 
 <body>
+    Ik ben geboren op:
+    <div id="dag"></div> -
+    <div id="maand"></div> -
     <div id="jaar"></div>
-    <div id="geboren"></div>
 </body>
 
 </html>
