@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+}
+
+.blue {
+    color: #2E2EFE;
+    font-size: 22px;
+}
+
+.orange {
+    color: #FFBF00;
+    font-size: 12px;
+}
+
+.red {
+    color: #FF0000;
+    font-size: 36px;
+}
+
+.green {
+    color: #088A08;
+    font-size: 18px;
+}
+
+.yellow {
+    color: #F7FE2E;
+    font-size: 24px;
+}
