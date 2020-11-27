@@ -1,5 +1,5 @@
 function toonDatum(){
-    // Schrijf hier jou code    
+    // Schrijf hier jouw code    
 }
 
 window.addEventListener('DOMContentLoaded', toonDatum);
